@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Reynaldo Aguirre">
+  <title>Technology Company</title>
+
+  <!----Custom Style---->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!----Icons---->
+  <link rel="stylesheet" href="./css/all.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="images/logo5.png" class="logo">
+      <nav>
+        <ul id="menuList">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Services</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu2.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+    <div class="row">
+      <div class="col-1">
+        <h2>IT Network<br>Communication</h2>
+        <h3>Top Technology</h3>
+        <p>Ricardo Pernia</p>
+        <h4>Contact Us</h4>
+        <button type="button"><a href="https://wa.me/16145912571" target="_bl
+          ">WHATSAPP</a><img src="./images/whatsapp.png"></button>
+        <button type="button"><a href="mailto: perniaricardo@gmail.com" target="_bl
+          ">EMAIL</a><img src="./images/gmail.png"></button>
+      </div>
+      <div class="col-2">
+        <img src="./images/homepic4.png" class="homepic">
+        <div class="color-box"></div>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+  </div>
+  
+
+  <script>
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "0px";
+
+    function togglemenu(){
+
+      if(menuList.style.maxHeight == "0px")
+      {
+        menuList.style.maxHeight = "130px";
+      }
+      else
+      {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+</body>
+</html>
